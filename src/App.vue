@@ -44,7 +44,7 @@
       <h1>Hola  Mundo desde Vue.js 3</h1>
     </small>
     <hr />
-    <h2>Counter: {{ contador }}</h2>
+    <h2>Counter: <span>{{ contador }}</span> </h2>
 
     <!-- <button v-on:click="saludar()" >+1</button>  @ es igual que v-on:  -->
     <button @click="incrementar()">+1</button>
@@ -71,6 +71,10 @@
 
   h2 {
     font-size: 2.5rem;
+  }
+
+  span {
+    color: crimson;
   }
 
   button {
